@@ -12,8 +12,7 @@ test('exponentiation of nearest highest power of two', t => {
     [1023, 2 ** 10],
     [1024, 2 ** 10],
     [1025, 2 ** 11],
-    [2 ** 31 - 1, 2 ** 31],
-    [2 ** 78 - 1, 2 ** 78]
+    [2 ** 31 - 1, 2 ** 31]
   ];
 
   for (const v of tests) {
