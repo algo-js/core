@@ -1,6 +1,6 @@
 {
   "name": "@algo-js/core",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "Core algorithms functions",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
@@ -47,9 +47,6 @@
   },
   "engines": {
     "node": ">=8.9"
-  },
-  "dependencies": {
-    "sha.js": "^2.4.11"
   },
   "devDependencies": {
     "@bitjson/npm-scripts-info": "^1.0.0",
