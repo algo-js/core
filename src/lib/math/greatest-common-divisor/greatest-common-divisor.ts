@@ -2,11 +2,11 @@
  * Returns greatest common divider of two numbers
  * using iterative Euclid's algorithm
  *
- * @link https://en.wikipedia.org/wiki/Euclidean_algorithm
- *
  * Iterative algorithm much faster
  * in average ~1.335 (own benchmarks)
  * than recursive
+ *
+ * @link https://en.wikipedia.org/wiki/Euclidean_algorithm
  *
  * @param {number} a
  * @param {number} b
