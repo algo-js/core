@@ -3,17 +3,17 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>@algo-js/core</title>
+	<title>EmitEvents | @algo-js/core</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body>
 <header>
 	<div class="tsd-page-toolbar">
 		<div class="container">
 			<div class="table-wrap">
-				<div class="table-cell" id="tsd-search" data-index="assets/js/search.js" data-base=".">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
 					<div class="field">
 						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
 						<input id="tsd-search-field" type="text" />
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="index.html" class="title">@algo-js/core</a>
+					<a href="../index.html" class="title">@algo-js/core</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -53,68 +53,149 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="globals.html">Globals</a>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="emitevents.html">EmitEvents</a>
 				</li>
 			</ul>
-			<h1> @algo-js/core</h1>
+			<h1>Interface EmitEvents&lt;T&gt;</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<div class="tsd-panel tsd-typography">
-				<a href="#algo-jscore" id="algo-jscore" style="color: inherit; text-decoration: none;">
-					<h1>@algo-js/core</h1>
-				</a>
-				<p>Core algorithms functions</p>
-			</div>
+			<section class="tsd-panel tsd-type-parameters">
+				<h3>Type parameters</h3>
+				<ul class="tsd-type-parameters">
+					<li>
+						<h4>T</h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">EmitEvents</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implemented by</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="../classes/eventemitter.html" class="tsd-signature-type">EventEmitter</a></li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="emitevents.html#emit" class="tsd-kind-icon">emit</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="emit" class="tsd-anchor"></a>
+					<h3>emit</h3>
+					<div class="tsd-signature tsd-kind-icon">emit<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/algo-js/core/blob/42395f1/src/lib/utils/event-emitter/event-emitter.ts#L22">lib/utils/event-emitter/event-emitter.ts:22</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>eventName<span class="tsd-signature-symbol">: </span><a href="../globals.html#teventname" class="tsd-signature-type">TEventName</a>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>eventName: <a href="../globals.html#teventname" class="tsd-signature-type">TEventName</a></h5>
+											</li>
+											<li>
+												<h5>value: <span class="tsd-signature-type">T</span></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="globals  ">
-						<a href="globals.html"><em>Globals</em></a>
+						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-class tsd-has-type-parameter">
-						<a href="classes/comparator.html" class="tsd-kind-icon">Comparator</a>
+						<a href="../classes/comparator.html" class="tsd-kind-icon">Comparator</a>
 					</li>
 					<li class=" tsd-kind-class tsd-has-type-parameter">
-						<a href="classes/eventemitter.html" class="tsd-kind-icon">Event<wbr>Emitter</a>
+						<a href="../classes/eventemitter.html" class="tsd-kind-icon">Event<wbr>Emitter</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="interfaces/emitevents.html" class="tsd-kind-icon">Emit<wbr>Events</a>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-has-type-parameter">
+						<a href="emitevents.html" class="tsd-kind-icon">Emit<wbr>Events</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="emitevents.html#emit" class="tsd-kind-icon">emit</a>
+							</li>
+						</ul>
 					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="interfaces/listenevents.html" class="tsd-kind-icon">Listen<wbr>Events</a>
+						<a href="listenevents.html" class="tsd-kind-icon">Listen<wbr>Events</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
-						<a href="globals.html#tcomparefn" class="tsd-kind-icon">TCompare<wbr>Fn</a>
+						<a href="../globals.html#tcomparefn" class="tsd-kind-icon">TCompare<wbr>Fn</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
-						<a href="globals.html#teventcallback" class="tsd-kind-icon">TEvent<wbr>Callback</a>
+						<a href="../globals.html#teventcallback" class="tsd-kind-icon">TEvent<wbr>Callback</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
-						<a href="globals.html#teventname" class="tsd-kind-icon">TEvent<wbr>Name</a>
+						<a href="../globals.html#teventname" class="tsd-kind-icon">TEvent<wbr>Name</a>
 					</li>
 					<li class=" tsd-kind-function">
-						<a href="globals.html#greatestcommondivisor" class="tsd-kind-icon">greatest<wbr>Common<wbr>Divisor</a>
+						<a href="../globals.html#greatestcommondivisor" class="tsd-kind-icon">greatest<wbr>Common<wbr>Divisor</a>
 					</li>
 					<li class=" tsd-kind-function">
-						<a href="globals.html#ispoweroftwo" class="tsd-kind-icon">is<wbr>Power<wbr>OfTwo</a>
+						<a href="../globals.html#ispoweroftwo" class="tsd-kind-icon">is<wbr>Power<wbr>OfTwo</a>
 					</li>
 					<li class=" tsd-kind-function">
-						<a href="globals.html#leastcommonmultiple" class="tsd-kind-icon">least<wbr>Common<wbr>Multiple</a>
+						<a href="../globals.html#leastcommonmultiple" class="tsd-kind-icon">least<wbr>Common<wbr>Multiple</a>
 					</li>
 					<li class=" tsd-kind-function">
-						<a href="globals.html#nearesthighestpoweroftwo" class="tsd-kind-icon">nearest<wbr>Highest<wbr>Power<wbr>OfTwo</a>
+						<a href="../globals.html#nearesthighestpoweroftwo" class="tsd-kind-icon">nearest<wbr>Highest<wbr>Power<wbr>OfTwo</a>
 					</li>
 					<li class=" tsd-kind-function">
-						<a href="globals.html#nearesthighestpoweroftworesult" class="tsd-kind-icon">nearest<wbr>Highest<wbr>Power<wbr>OfTwo<wbr>Result</a>
+						<a href="../globals.html#nearesthighestpoweroftworesult" class="tsd-kind-icon">nearest<wbr>Highest<wbr>Power<wbr>OfTwo<wbr>Result</a>
 					</li>
 				</ul>
 			</nav>
@@ -185,7 +266,7 @@
 	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
-<script src="assets/js/main.js"></script>
-<script>if (location.protocol == 'file:') document.write('<script src="assets/js/search.js"><' + '/script>');</script>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
 </body>
 </html>

@@ -71,12 +71,22 @@
 							<h3>Classes</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/comparator.html" class="tsd-kind-icon">Comparator</a></li>
+								<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/eventemitter.html" class="tsd-kind-icon">Event<wbr>Emitter</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Interfaces</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-has-type-parameter"><a href="interfaces/emitevents.html" class="tsd-kind-icon">Emit<wbr>Events</a></li>
+								<li class="tsd-kind-interface tsd-has-type-parameter"><a href="interfaces/listenevents.html" class="tsd-kind-icon">Listen<wbr>Events</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="globals.html#tcomparefn" class="tsd-kind-icon">TCompare<wbr>Fn</a></li>
+								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="globals.html#teventcallback" class="tsd-kind-icon">TEvent<wbr>Callback</a></li>
+								<li class="tsd-kind-type-alias"><a href="globals.html#teventname" class="tsd-kind-icon">TEvent<wbr>Name</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -100,7 +110,7 @@
 					<div class="tsd-signature tsd-kind-icon">TCompare<wbr>Fn&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/algo-js/core/blob/70d2e36/src/lib/utils/comparator/comparator.ts#L1">lib/utils/comparator/comparator.ts:1</a></li>
+							<li>Defined in <a href="https://github.com/algo-js/core/blob/42395f1/src/lib/utils/comparator/comparator.ts#L1">lib/utils/comparator/comparator.ts:1</a></li>
 						</ul>
 					</aside>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -134,6 +144,56 @@
 						</ul>
 					</div>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter">
+					<a name="teventcallback" class="tsd-anchor"></a>
+					<h3>TEvent<wbr>Callback</h3>
+					<div class="tsd-signature tsd-kind-icon">TEvent<wbr>Callback&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/algo-js/core/blob/42395f1/src/lib/utils/event-emitter/event-emitter.ts#L2">lib/utils/event-emitter/event-emitter.ts:2</a></li>
+						</ul>
+					</aside>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>T</h4>
+						</li>
+					</ul>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>a: <span class="tsd-signature-type">T</span></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="teventname" class="tsd-anchor"></a>
+					<h3>TEvent<wbr>Name</h3>
+					<div class="tsd-signature tsd-kind-icon">TEvent<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/algo-js/core/blob/42395f1/src/lib/utils/event-emitter/event-emitter.ts#L1">lib/utils/event-emitter/event-emitter.ts:1</a></li>
+						</ul>
+					</aside>
+				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
@@ -147,7 +207,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/algo-js/core/blob/70d2e36/src/lib/math/greatest-common-divisor/greatest-common-divisor.ts#L15">lib/math/greatest-common-divisor/greatest-common-divisor.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/algo-js/core/blob/42395f1/src/lib/math/greatest-common-divisor/greatest-common-divisor.ts#L15">lib/math/greatest-common-divisor/greatest-common-divisor.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -187,7 +247,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/algo-js/core/blob/70d2e36/src/lib/math/is-power-of-two/is-power-of-two.ts#L7">lib/math/is-power-of-two/is-power-of-two.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/algo-js/core/blob/42395f1/src/lib/math/is-power-of-two/is-power-of-two.ts#L7">lib/math/is-power-of-two/is-power-of-two.ts:7</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -215,7 +275,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/algo-js/core/blob/70d2e36/src/lib/math/least-common-multiple/least-common-multiple.ts#L12">lib/math/least-common-multiple/least-common-multiple.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/algo-js/core/blob/42395f1/src/lib/math/least-common-multiple/least-common-multiple.ts#L12">lib/math/least-common-multiple/least-common-multiple.ts:12</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -251,7 +311,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/algo-js/core/blob/70d2e36/src/lib/math/nearest-highest-power-of-two/nearest-highest-power-of-two.ts#L7">lib/math/nearest-highest-power-of-two/nearest-highest-power-of-two.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/algo-js/core/blob/42395f1/src/lib/math/nearest-highest-power-of-two/nearest-highest-power-of-two.ts#L7">lib/math/nearest-highest-power-of-two/nearest-highest-power-of-two.ts:7</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -279,7 +339,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/algo-js/core/blob/70d2e36/src/lib/math/nearest-highest-power-of-two-result/nearest-highest-power-of-two-result.ts#L12">lib/math/nearest-highest-power-of-two-result/nearest-highest-power-of-two-result.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/algo-js/core/blob/42395f1/src/lib/math/nearest-highest-power-of-two-result/nearest-highest-power-of-two-result.ts#L12">lib/math/nearest-highest-power-of-two-result/nearest-highest-power-of-two-result.ts:12</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -319,8 +379,23 @@
 					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="classes/comparator.html" class="tsd-kind-icon">Comparator</a>
 					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/eventemitter.html" class="tsd-kind-icon">Event<wbr>Emitter</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/emitevents.html" class="tsd-kind-icon">Emit<wbr>Events</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/listenevents.html" class="tsd-kind-icon">Listen<wbr>Events</a>
+					</li>
 					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
 						<a href="globals.html#tcomparefn" class="tsd-kind-icon">TCompare<wbr>Fn</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="globals.html#teventcallback" class="tsd-kind-icon">TEvent<wbr>Callback</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#teventname" class="tsd-kind-icon">TEvent<wbr>Name</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#greatestcommondivisor" class="tsd-kind-icon">greatest<wbr>Common<wbr>Divisor</a>
