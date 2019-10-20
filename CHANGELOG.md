@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/algo-js/core/compare/v1.0.28...v1.1.0) (2019-10-20)
+
+
+### Features
+
+* **comparator:** added comparator class for comparisons ([fe635d8](https://github.com/algo-js/core/commit/fe635d8))
+
+
+
 ### [1.0.28](https://github.com/algo-js/core/compare/v1.0.25...v1.0.28) (2019-10-20)
 
 
