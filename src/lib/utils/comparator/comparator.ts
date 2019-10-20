@@ -1,4 +1,4 @@
-type TCompareFn = (a, b) => number;
+export type TCompareFn = (a, b) => number;
 
 export class Comparator<T> {
   public static defaultCompareFn(a, b): number {
@@ -53,8 +53,10 @@ export class Comparator<T> {
   /**
    * Reverses the comparison order
    */
-  public reverse(): void {
+  public reverse(): this {
     const compareFn = this.compareFn;
     this.compareFn = (a, b) => compareFn(b, a);
+
+    return this;
   }
 }
