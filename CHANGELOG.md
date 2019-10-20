@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/algo-js/core/compare/v1.1.1...v1.2.0) (2019-10-20)
+
+
+### Features
+
+* **Comparator#reverse:** now returns this ([49bdd7f](https://github.com/algo-js/core/commit/49bdd7f))
+
+
+
 ### [1.1.1](https://github.com/algo-js/core/compare/v1.1.0...v1.1.1) (2019-10-20)
 
 
