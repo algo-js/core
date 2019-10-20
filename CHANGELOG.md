@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.1](https://github.com/algo-js/core/compare/v1.3.0...v1.3.1) (2019-10-20)
+
+
+### Bug Fixes
+
+* **EventEmitter:** fixed a bug when `emit` returns false if emitter has once listener ([6a4bd28](https://github.com/algo-js/core/commit/6a4bd28))
+
+
+
 ## [1.3.0](https://github.com/algo-js/core/compare/v1.2.2...v1.3.0) (2019-10-20)
 
 

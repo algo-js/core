@@ -1,6 +1,6 @@
 {
   "name": "@algo-js/core",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "Core algorithms functions",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
