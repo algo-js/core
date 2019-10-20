@@ -84,6 +84,10 @@ export class EventEmitter<T> implements EmitEvents<T>, ListenEvents<T> {
       container.splice(index, 1);
     }
 
+    if (container.length === 0) {
+      this.deleteEventContainer(eventName);
+    }
+
     return this;
   }
 
@@ -100,11 +104,14 @@ export class EventEmitter<T> implements EmitEvents<T>, ListenEvents<T> {
       return false;
     }
 
+    let emittedOnce = false;
+
     for (const [cb] of container) {
       cb(value, ...args);
+      emittedOnce = true;
     }
 
-    return container.length > 0;
+    return emittedOnce;
   }
 
   /**

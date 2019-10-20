@@ -24,6 +24,15 @@ test('emits', t => {
 
   eventEmitter.emit(events.CREATED, originatedValue, 2);
   eventEmitter.emit(events.DESTROYED, originatedValue, 2);
+
+  eventEmitter.removeAllListeners();
+
+  eventEmitter.once(events.CREATED, value => {
+    t.is(value, originatedValue);
+  });
+
+  t.is(eventEmitter.emit(events.CREATED, originatedValue), true);
+  t.is(eventEmitter.emit(events.CREATED, originatedValue), false);
 });
 
 test('once', t => {
@@ -117,4 +126,18 @@ test('removeAllListeners', t => {
   eventEmitter.removeAllListeners();
   eventEmitter.emit(events.DESTROYED, 1);
   t.is(invokes2, m);
+});
+
+test('eventNames', t => {
+  const originatedValue = Symbol('data');
+
+  const eventEmitter = new EventEmitter<typeof originatedValue>();
+
+  eventEmitter.once(events.CREATED, value => {
+    t.is(value, originatedValue);
+  });
+
+  eventEmitter.emit(events.CREATED, originatedValue);
+
+  t.is(eventEmitter.eventNames().length, 0);
 });
