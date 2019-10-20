@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.1](https://github.com/algo-js/core/compare/v1.2.0...v1.2.1) (2019-10-20)
+
+
+### Bug Fixes
+
+* **compareFn:** added type placeholder for TCompareFn ([70d2e36](https://github.com/algo-js/core/commit/70d2e36))
+
+
+
 ## [1.2.0](https://github.com/algo-js/core/compare/v1.1.1...v1.2.0) (2019-10-20)
 
 
