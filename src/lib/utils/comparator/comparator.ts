@@ -1,13 +1,13 @@
-export type TCompareFn = (a, b) => number;
+export type TCompareFn<T> = (a: T, b: T) => number;
 
 export class Comparator<T> {
   public static defaultCompareFn(a, b): number {
     return a === b ? 0 : a < b ? -1 : 1;
   }
 
-  private compareFn: TCompareFn;
+  private compareFn: TCompareFn<T>;
 
-  constructor(compareFn: TCompareFn = Comparator.defaultCompareFn) {
+  constructor(compareFn: TCompareFn<T> = Comparator.defaultCompareFn) {
     if (typeof compareFn !== 'function') {
       compareFn = Comparator.defaultCompareFn;
     }
