@@ -1,4 +1,5 @@
 // tslint:disable:no-expression-statement
+// @ts-ignore
 import test from 'ava';
 import { greatestCommonDivisor } from './greatest-common-divisor';
 
